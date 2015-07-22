@@ -12,7 +12,6 @@ describe('Tests', function() {
 
 describe('CLI', function() {
   it('should thank me for downloading', function(done) {
-    console.log('childprocess');
     cp.execFile('./app.js', function(err, stdout) {
       stdout.should.equal('Thanks for downloading my app!\n');
       done();
