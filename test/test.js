@@ -1,7 +1,6 @@
 var path = require('path');
 var should = require("chai").should();
 var Animal = require(path.join(process.cwd() + "/lib/Animal")); // Alt ('../lib/Animal')
-// var Cheers = require(path.join(process.cwd() + "/Cheers"));
 var cp = require('child_process');
 
 //test to make sure test is working
@@ -22,7 +21,7 @@ describe('CLI', function() {
 });
 
 //Tests for the cheers function
-describe.only('Cheers', function() {
+describe('Cheers', function() {
   it('should create a cheer from name', function(done) {
     cp.execFile('./lib/Cheers.js', ['Katy'], function(err, stdout) {
       stdout.should.equal("Give me a K!\nGive me an A!\nGive me a T!\nGive me a Y!\n");
