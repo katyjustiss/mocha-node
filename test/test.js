@@ -19,23 +19,6 @@ describe('CLI', function() {
   })
 });
 
-//Tests for the cheers function
-// describe('Cheers', function() {
-//   it('should create a cheer from name', function(done) {
-//     cp.execFile('./lib/Cheers.js', ['Katy'], function(err, stdout) {
-//       stdout.should.equal("Give me a K!\nGive me an A!\nGive me a T!\nGive me a Y!\n");
-//       done();
-//     })
-//   })
-//   it('should create cheer that can handle spaces', function(done) {
-//     cp.execFile('./lib/Cheers.js', ['Katy', 'Ann'], function(err, stdout) {
-//       stdout.should.equal("Give me a K!\nGive me an A!\nGive me a T!\nGive me a Y!\nGive me an A!\nGive me an N!\nGive me an N!\n");
-//       done();
-//     })
-//   })
-// });
-
-
 describe('Animal', function() {
   describe('constructor', function() {
     it('should return an animal object', function() {
